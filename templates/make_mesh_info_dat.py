@@ -21,7 +21,10 @@ import argparse
 from datetime import datetime
 import scipy.sparse as sp
 import pickle
-from scipy.sparse.linalg.eigen.arpack import eigsh
+try:
+    from scipy.sparse.linalg.eigen.arpack import eigsh
+except ImportError:
+    from scipy.sparse.linalg import eigsh
 from scipy import sparse
 import vtk
 from vtk.util.numpy_support import vtk_to_numpy, numpy_to_vtk

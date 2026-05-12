@@ -4,7 +4,7 @@ target_node_num=3260
 num_handles_arr=(75 600)
 num_mesh=7
 
-shape_deform_dir=bc/build
+shape_deform_dir=bc/build/Release
 
 mkdir -p $output_dir
 # Step 1: create template from segmentation
